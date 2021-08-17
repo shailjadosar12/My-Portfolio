@@ -1,6 +1,7 @@
 :root{
   --primary-white : #fff;
   --primary-orange : #f9ab00;
+  --primary-black : #282a27;
   --primary-dark : rgba(255,255,255,0);
 }
 
@@ -15,6 +16,9 @@ body{
   font-family: "Roboto Condesed" sans-serif;
 }
 /****************************************** MENU LINK **************************************************/
+nav{
+  z-index: 2;
+}
 ul.navbar-nav {
   margin-left: auto;
 }
@@ -43,4 +47,57 @@ ul li{
 }
 .navbar-nav> li > a:hover{
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/******************************************** HEADER ***************************************************/
+.header-wraper{
+  position: relative;
+  background: url(banner1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condesed" sans-serif ;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/****************************************** Typed Text **************************************************/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-black);
+  
+}
+
+.btn-main-offer{
+  border : 1px solid var(--primary-orange);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem, 0.75rem, 0.75rem, 0.75rem;
+  color: var(--primary-black);
+  margin:2rem;
+}
+
+/**************************************** Particales ***********************************/
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+
+
 }
