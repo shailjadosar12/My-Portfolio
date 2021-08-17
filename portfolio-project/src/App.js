@@ -14,14 +14,6 @@ function App() {
               enable:true,
               value_area:900
             }
-          },
-          shape:{
-            type:"polygon",
-            stroke:{
-              width:6,
-              
-
-            }
           }
         }
       }} />
