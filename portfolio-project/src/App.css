@@ -42,6 +42,11 @@ ul li{
   padding: 0 !important;
   height: 6rem !important;
 }
+@media(max-width:786px){
+  .navbar-brand{
+    width: 7rem;
+  }
+}
 .navbar-nav > li > a.active, .navbar-nav > li > a:active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
@@ -69,17 +74,28 @@ ul li{
   justify-content: center;
   align-items: center;
   font-family: "Roboto Condesed" sans-serif ;
+  z-index: 1;
 }
 .main-info h1{
   color: var(--primary-orange);
   text-transform: uppercase;
 }
+@media  (max-width:768px){
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
 
+}
 /****************************************** Typed Text **************************************************/
 .typed-text{
   font-size: 2rem;
   color: var(--primary-black);
   
+}
+@media(max-width:786px){
+  .typed-text{
+    font-size: 1.3rem;
+  }
 }
 
 .btn-main-offer{
@@ -89,6 +105,14 @@ ul li{
   padding: 0.625rem, 0.75rem, 0.75rem, 0.75rem;
   color: var(--primary-black);
   margin:2rem;
+  text-decoration: none ;
+  font-size: 1.03rem;
+}
+
+.btn-main-offer:hover{
+  
+  background-color: var(--primary-orange);
+  transition: .2s ease-in-out;
 }
 
 /**************************************** Particales ***********************************/
@@ -98,6 +122,9 @@ ul li{
   height: 100vh;
   width: 100vw;
   z-index: 1;
-
-
+}
+@media(max-width:768px){
+  .particles-canvas{
+    display: none;
+  }
 }
