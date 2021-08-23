@@ -1,0 +1,22 @@
+.card-wrapper{
+    position:relative;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+ 
+  }
+  .card-layout{
+      /* box-shadow:red; */
+      width: "50rem"
+  }
+  .card-image{
+      height:250px;
+      width:250px;
+      border-radius:125px;
+      position: relative;
+      align-self: center;
+      
+  }
+  .card-body{
+      text-align:center;
+  }
