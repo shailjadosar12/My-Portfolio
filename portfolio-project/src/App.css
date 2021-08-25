@@ -14,10 +14,13 @@
 
 body{
   font-family: "Roboto Condesed" sans-serif;
+  /* background-color:#f6f6f6 */
+  background-color: rgba(240, 231, 231, 0.76);
 }
 /****************************************** MENU LINK **************************************************/
 nav{
   z-index: 2;
+  /* position: sticky; */
 }
 ul.navbar-nav {
   margin-left: auto;

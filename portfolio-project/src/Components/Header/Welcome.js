@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from "react";
+import ProfileContext from "../ContextData/ProfileContext";
 
 const Welcome = () => {
-    return (
-        <div>
-            <hr/>
-            <h1>Welcome to my Portfolio</h1>
-            <hr/>
-        </div>
-    )
-}
+  const value1 = useContext(ProfileContext);
+  return (
+    <div>
+      <hr />
 
-export default Welcome
+      <h1>Welcome to my Portfolio</h1>
+      <h1>{value1}</h1>
+      <hr />
+    </div>
+  );
+};
+
+export default Welcome;

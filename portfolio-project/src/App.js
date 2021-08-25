@@ -6,6 +6,8 @@ import Particles from "react-particles-js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Welcome from "./Components/Header/Welcome";
 import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,17 +27,29 @@ function App() {
           }}
         />
         <Navbar />
+        {/* <profileInfoContext.Provider value={profileInfoContext}> */}
+
         <Switch>
           <Route exact path="/">
             <Header />
           </Route>
           <Route path="/about">
-            <About/>
+            <About />
           </Route>
           <Route path="/services">
-            <Welcome />
+            <Services />
+          </Route>
+          <Route path="/experience">
+            <Services />
+          </Route>
+          <Route path="/portfolio">
+            <Services />
+          </Route>
+          <Route path="/contacts">
+            <Services />
           </Route>
         </Switch>
+        {/* </profileInfoContext.Provider> */}
       </div>
     </BrowserRouter>
   );
